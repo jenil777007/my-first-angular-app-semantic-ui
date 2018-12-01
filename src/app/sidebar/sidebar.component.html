@@ -1,0 +1,13 @@
+<div>
+  <a class="item" routerLink="">
+    My First Angular App
+  </a>
+  <a class="item" routerLink="" [class.active]="currentUrl == '/'">
+    <i class="home icon"></i>
+    Home
+  </a>
+  <a class="item" routerLink="users" [class.active]="currentUrl == '/users'">
+    <i class="users icon"></i>
+    Users
+  </a>
+</div>

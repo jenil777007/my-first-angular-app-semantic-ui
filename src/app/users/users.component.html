@@ -1,0 +1,26 @@
+<div class="">
+  <h1 class="ui header">Users</h1>
+
+  <hr>
+  
+  <!-- <div class="ui three column stackable grid"> -->
+  <div *ngFor="let user of users$" class="ui container grid">
+    <div class="row">
+      <div class="ten wide column" routerLink="/details/{{user.id}}" style="cursor: pointer">
+        <div class="ui raised segment">
+          <div class="ui">
+            <div class="image header">
+              <div class="line ui huge header">{{ user.name }}</div>
+              <div class="line ui medium header">{{ user.email }}</div>
+            </div>
+            <div class="paragraph">
+              <div class="medium line">Company Name: {{ user.company.name }}</div>
+              <div class="short line">Website: {{ user.website }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+</div>
